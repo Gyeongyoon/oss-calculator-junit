@@ -63,4 +63,10 @@ public class Main {
 
         scanner.close();
     }
+    
+    @Test
+    void multiply_should_fail() {
+        Calculator c = new Calculator();
+        assertEquals(20, c.multiply(2, 5)); // 실제 multiply 함수가 잘못 구현되어 있다면 FAIL
+    }
 }
